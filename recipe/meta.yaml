@@ -1,5 +1,5 @@
 {% set name = "yaqd-microchip" %}
-{% set version = "2020.8.0" %}
+{% set version = "2020.12.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yaqd-microchip-{{ version }}.tar.gz
-  sha256: 56b5178f077d0a0991df064de5d650337bcd128ac97a814e9e8b68e83fc06ab4
+  sha256: 2017dda22775e335d5349583aeac649f5add34e7455c9971deedb170aec27f49
 
 build:
   number: 0

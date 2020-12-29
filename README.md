@@ -5,11 +5,11 @@ Home: https://yaq.fyi/
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/yaqd-microchip-feedstock/blob/master/LICENSE.txt)
 
 Summary: yaq daemons for interfacing with Microchip integrated circuits
 
-
+Development: https://gitlab.com/yaq/yaqd-microchip
 
 Current build status
 ====================
