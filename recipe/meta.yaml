@@ -1,5 +1,5 @@
 {% set name = "yaqd-microchip" %}
-{% set version = "2020.12.0" %}
+{% set version = "2021.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yaqd-microchip-{{ version }}.tar.gz
-  sha256: 2017dda22775e335d5349583aeac649f5add34e7455c9971deedb170aec27f49
+  sha256: 6c90fea8016ad2df76fd785d4412fd02bfef8e389f87054e81b61c4ea43eef78
 
 build:
   number: 0
@@ -24,11 +24,11 @@ requirements:
     - pip
     - flit
     - smbus2
-    - yaqd-core >=2020.06.3
+    - yaqd-core >=2021.3.0
   run:
     - python >=3.7
     - smbus2
-    - yaqd-core >=2020.06.3
+    - yaqd-core >=2021.3.0
 
 test:
   imports:
