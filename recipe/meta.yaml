@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/yaqd-microchip-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/yaqd-microchip-{{ version }}.tar.gz
   sha256: 6c90fea8016ad2df76fd785d4412fd02bfef8e389f87054e81b61c4ea43eef78
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - yaqd-mcp3428 = yaqd_microchip._mcp3428:MCP3428.main
@@ -20,13 +20,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pip
     - flit
     - smbus2
     - yaqd-core >=2021.3.0
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - smbus2
     - yaqd-core >=2021.3.0
 
@@ -39,6 +39,7 @@ test:
     - yaqd-mcp9600 --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://yaq.fyi/
